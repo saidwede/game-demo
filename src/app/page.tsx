@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { TbInfoSmall } from "react-icons/tb";
+import { FaInfo } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -26,8 +26,8 @@ export default function Home() {
       </div>
       <div className="absolute top-[100px] h-[calc(100vh-200px)] left-1/2 -translate-x-1/2 w-[calc(100vw-200px)]">
         {/* <div className="text-center text-3xl pt-8 pb-12">Niveau 01</div> */}
-        <div className="absolute text-3xl left-2 top-0 h-8 w-8 border-[2px] border-[#4ED0D6] rounded-full flex justify-center items-center">
-          <TbInfoSmall className="text-[40px] text-[#4ED0D6]" />
+        <div className="absolute cursor-pointer text-3xl left-2 top-0 h-9 w-9 border-[2px] border-[#4ED0D6] rounded-full flex justify-center items-center">
+          <FaInfo className="text-[12px] text-[#4ED0D6]" />
         </div>
         <div className="absolute text-3xl right-2 top-0">09:00</div>
         {/* <div className="absolute p-[2px] text-xl right-3 top-0 h-8 w-14 border border-[#4ED0D6] rounded-md">
@@ -63,14 +63,11 @@ export default function Home() {
         <div className="pt-5">
           <input className="pl-4 text-sm border-[2px] border-[#4ED0D6] h-14 bg-[#4ED0D6] bg-opacity-20" placeholder="Entrez une autre réponse" type="text" />
         </div>
-        <div className="relative inline-block mt-8">
+        <div className="relative cursor-pointer inline-block mt-8">
           <img className="w-40" src="/buttons/blue-button.svg" alt="" />
           <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-black">Verifier</span>
         </div>
-        
-        
-
-        <div className="absolute bottom-0 right-0 inline-block">
+        <div className="absolute cursor-pointer bottom-0 right-0 inline-block">
           <img className="w-40" src="/buttons/blue-button.svg" alt="" />
           <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-black">Suivant</span>
         </div>
