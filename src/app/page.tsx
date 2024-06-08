@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { TbInfoSmall } from "react-icons/tb";
 
 export default function Home() {
   return (
@@ -17,16 +18,19 @@ export default function Home() {
       </div>
       <div className="absolute right-[120px] top-8">
         <div className="text-[#4ED0D6] text-xs mb-2 text-right">
-          <span>Niveau de progression</span>
+          <span>Question 3/10</span>
         </div>
         <div className="h-[10px] relative w-[300px] border border-b-4 border-[#4ED0D6] border-[34ED0D6]">
           <div className="h-full w-[120px] absolute top-0 left-0 z-10 bg-[#4ED0D6]"></div>
         </div>
       </div>
       <div className="absolute top-[100px] h-[calc(100vh-200px)] left-1/2 -translate-x-1/2 w-[calc(100vw-200px)]">
-        <div className="text-center text-3xl pt-8 pb-12">Niveau 01</div>
-        <div className="absolute text-3xl left-2 top-0">09:00</div>
-        <div className="absolute p-[2px] text-xl right-3 top-0 h-8 w-14 border border-[#4ED0D6] rounded-md">
+        {/* <div className="text-center text-3xl pt-8 pb-12">Niveau 01</div> */}
+        <div className="absolute text-3xl left-2 top-0 h-8 w-8 border-[2px] border-[#4ED0D6] rounded-full flex justify-center items-center">
+          <TbInfoSmall className="text-[40px] text-[#4ED0D6]" />
+        </div>
+        <div className="absolute text-3xl right-2 top-0">09:00</div>
+        {/* <div className="absolute p-[2px] text-xl right-3 top-0 h-8 w-14 border border-[#4ED0D6] rounded-md">
           <div className="grid h-full w-full gap-[1px] grid-cols-10 rounded-sm overflow-hidden">
             <div className="bg-[#4ED0D6] w-full h-full"></div>
             <div className="bg-[#4ED0D6] w-full h-full"></div>
@@ -36,8 +40,8 @@ export default function Home() {
             <div className="bg-[#4ED0D6] w-full h-full"></div>
           </div>
           <div className="absolute top-1/2 -right-[6px] -translate-y-1/2 h-3 w-1 bg-[#4ED0D6]"></div>
-        </div>
-        <h2 className="text-2xl">Quelle est la réponse à la question numéro 01?</h2>
+        </div> */}
+        <h2 className="text-2xl mt-24">Quelle est la réponse à la question numéro 01?</h2>
         <div className="grid gap-2 pt-10">
           <label className="cursor-pointer flex items-center gap-3">
             <input type="radio" className=" appearance-none rounded-full h-8 w-8 border-2 bg-[#4ED0D6] bg-opacity-20 border-[#4ED0D6] relative checked:after:absolute checked:after:top-1/2 checked:after:left-1/2 checked:after:-translate-x-1/2 checked:after:-translate-y-1/2 after:content-[''] after:inline-block checked:after:h-5 checked:after:w-5 checked:after:bg-[#4ED0D6] checked:after:rounded-full" name="res"/>
