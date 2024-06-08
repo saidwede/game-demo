@@ -3,7 +3,7 @@ import { FaInfo } from "react-icons/fa";
 
 export default function Home() {
   return (
-    <div className="h-screen w-screen bg-[#222325] relative text-[#4ED0D6]">
+    <div className="font-rajdhani h-screen w-screen bg-[#222325] relative text-[#4ED0D6]">
       <div className="w-[300px] fixed top-0 left-[100px] blur-[200px] h-[100px] bg-[#BF3A35] rounded-[100%]"></div>
       <div className="w-[300px] fixed bottom-0 right-[100px] blur-[200px] h-[100px] bg-[#5FF7FC] rounded-[100%]"></div>
       <img alt="decorative" className="bottom-10 w-[calc(100vw-200px)] absolute left-1/2 -translate-x-1/2" src="/Decoratives/Vector_hor_down.svg" />
