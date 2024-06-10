@@ -22,7 +22,7 @@ export default function Home() {
         <div className="absolute cursor-pointer text-3xl left-2 top-0 h-9 w-9 border-[2px] border-[#4ED0D6] rounded-full flex justify-center items-center">
           <FaInfo className="text-[12px] text-[#4ED0D6]" />
         </div>
-        <div className="absolute text-3xl right-2 top-0">09:00</div>
+        <div className="absolute text-3xl right-2 top-0"><span>Temps restant: </span> <span className=" text-orange-600">09:00</span></div>
         {/* <div className="absolute p-[2px] text-xl right-3 top-0 h-8 w-14 border border-[#4ED0D6] rounded-md">
           <div className="grid h-full w-full gap-[1px] grid-cols-10 rounded-sm overflow-hidden">
             <div className="bg-[#4ED0D6] w-full h-full"></div>
