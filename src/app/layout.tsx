@@ -16,7 +16,24 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div className="font-rajdhani h-screen w-screen bg-[#222325] relative text-[#4ED0D6]">
+          <div className="w-[300px] fixed top-0 left-[100px] blur-[200px] h-[100px] bg-[#BF3A35] rounded-[100%]"></div>
+          <div className="w-[300px] fixed bottom-0 right-[100px] blur-[200px] h-[100px] bg-[#5FF7FC] rounded-[100%]"></div>
+          <img alt="decorative" className="bottom-10 w-[calc(100vw-200px)] absolute left-1/2 -translate-x-1/2" src="/Decoratives/Vector_hor_down.svg" />
+          <img alt="decorative" className="top-20 w-[calc(100vw-200px)] absolute left-1/2 -translate-x-1/2" src="/Decoratives/Vector_hor_up.svg" />
+          <img alt="decorative" className="h-[calc(100vh-20px)] top-1/2 -translate-y-1/2 absolute left-5" src="/Decoratives/Vector_ver_left.svg" />
+          <img alt="decorative" className="h-[calc(100vh-20px)] top-1/2 -translate-y-1/2 absolute right-5" src="/Decoratives/Vector_ver_right.svg" />
+          <img className="absolute top-5 left-1/2 -translate-x-1/2 h-[75px]" src="/logos/autom_cyan_logo.svg" alt="" />
+          <img className="absolute top-[25px] left-[100px] w-[45px]" src="/top-left-element/logos/logo-red.svg"></img>
+          <div className="absolute top-[46px] -translate-y-1/2 left-[160px]">
+            <div className="text-xs text-red-500">Bienvenue</div>
+            <img className="" src="/top-left-element/rectangles/rectangle-red.svg"></img>
+          </div>
+          {children}
+        </div>
+        
+      </body>
     </html>
   );
 }
