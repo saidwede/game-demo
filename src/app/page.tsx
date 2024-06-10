@@ -1,7 +1,7 @@
 "use client"
-import Button from "@/ui/Button";
-import InputRadio from "@/ui/InputRadio";
-import InputText from "@/ui/InputText";
+import Button from "./ui/Button";
+import InputRadio from "./ui/InputRadio";
+import InputText from "./ui/InputText";
 import Image from "next/image";
 import { FaInfo } from "react-icons/fa";
 import { ImExit } from "react-icons/im";
