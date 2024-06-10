@@ -34,7 +34,7 @@ export default function Home() {
           </div>
           <div className="absolute top-1/2 -right-[6px] -translate-y-1/2 h-3 w-1 bg-[#4ED0D6]"></div>
         </div> */}
-        <h2 className="text-2xl mt-24">03/10: Quelle est la réponse à la question numéro 01?</h2>
+        <h2 className="text-2xl mt-24">03: Quelle est la réponse à la question numéro 03?</h2>
         <div className="grid gap-2 pt-10">
           <label className="cursor-pointer flex items-center gap-3">
             <InputRadio name="res" onChange={() => {}}></InputRadio>
@@ -59,11 +59,15 @@ export default function Home() {
           onChange = {() => {}}
         ></InputText>
         <Button className="relative mt-8">Verifier</Button>
-        <Button className="relative mt-8 ml-8">Suivant</Button>
-        <Button className="absolute bottom-0 right-0 flex">
-          <ImExit className="text-[20px] mr-1"/>
-          <span>Quitter</span>
-        </Button>
+        
+        <div className="absolute bottom-0 right-0 flex">
+          <Button className="">
+            <ImExit className="text-[20px] mr-1"/>
+            <span>Quitter</span>
+          </Button>
+          <Button className="ml-8">Suivant</Button>
+        </div>
+        
       </div>
     </>
   );

@@ -12,7 +12,7 @@ interface ButtonProps {
   const Button: React.FC<ButtonProps> = ({ onClick, children, disabled = false, className = '' }) => {
     return (
         <div 
-            className={`${className} cursor-pointer inline-block`} 
+            className={`${className} relative cursor-pointer inline-block`} 
             onClick={onClick}
         >
           <img className="w-40" src="/buttons/blue-button.svg" alt="" />
